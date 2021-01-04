@@ -1,8 +1,8 @@
 def sumOddLengthSubarrays(arr):
     i, count = 1, 0
     while i <= len(arr):
-        for j in range(len(arr) - 1):
-            count += sum(arr[j:j + 1])
+        for j in range(len(arr) - i + 1):
+            count += sum(arr[j:j + i])
         i += 2
     return count
 
