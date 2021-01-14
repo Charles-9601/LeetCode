@@ -1,24 +1,3 @@
-"""
-import math
-
-
-def Is_prime(num):
-    factor = int(math.sqrt(num))
-    for i in range(2, factor+1):
-        if num % i == 0:
-            return False
-    return True
-
-
-def CountPrimes(num):
-    count = 0
-    for i in range(2, num):
-        if Is_prime(i):
-            count += 1
-    return count
-"""
-
-
 def CountPrime(num):
     if num < 2:
         return 0
