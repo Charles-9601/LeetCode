@@ -4,7 +4,12 @@
 """
 
 
-def findRepeatNumber(nums):
+def findRepeatNumber(nums) -> bool:
+    """
+
+    :param nums:
+    :return:
+    """
     len_nums = len(nums)
     temp = 0
     for i in range(len_nums):
